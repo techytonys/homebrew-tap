@@ -1,9 +1,9 @@
 class Gush < Formula
   desc "Push code to GitHub in one command — no SSH keys, no tokens"
   homepage "https://gushpush.com"
-  url "https://github.com/techytonys/Gush/archive/refs/tags/v1.5.tar.gz"
-  sha256 "6fb091b05a0feba540cd81ef4946d6114f680879ac1779f46dee4406724b2e3f"
-  version "1.5"
+  url "https://github.com/techytonys/Gush/archive/refs/tags/v1.6.tar.gz"
+  sha256 "d816926c0976fa81a300cae4923f9f35baae07f69828bb06fbb2d0aba48f83bb"
+  version "1.6"
   license "MIT"
 
   depends_on "gh"
