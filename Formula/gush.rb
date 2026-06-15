@@ -2,8 +2,8 @@ class Gush < Formula
   desc "Push code to GitHub in one command"
   homepage "https://gushpush.com"
   url "https://raw.githubusercontent.com/techytonys/Gush/main/gush.sh"
-  version "2.4"
-  sha256 "4cdc9caa74d55be162d1e45dfff13a96d34e9121bd665156d6759d55e470ecb0"
+  version "2.5"
+  sha256 "6a836bf6b299f5ceb6f525927f5d1e30117202fdf73df85966cabb3a6afdc166"
 
   depends_on "gh"
 
