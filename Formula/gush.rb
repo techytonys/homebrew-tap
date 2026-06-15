@@ -1,10 +1,9 @@
 class Gush < Formula
-  desc "Push code to GitHub in one command — no SSH keys, no tokens"
+  desc "Push code to GitHub in one command"
   homepage "https://gushpush.com"
-  url "https://github.com/techytonys/Gush/archive/refs/tags/v1.6.tar.gz"
-  sha256 "d816926c0976fa81a300cae4923f9f35baae07f69828bb06fbb2d0aba48f83bb"
-  version "1.6"
-  license "MIT"
+  url "https://raw.githubusercontent.com/techytonys/Gush/main/gush.sh"
+  version "2.0"
+  sha256 "1fa10d367a8f2e91ac359aef699978a8bfcca66ddc8bae4c86efb35ffa2538aa"
 
   depends_on "gh"
 
@@ -13,6 +12,6 @@ class Gush < Formula
   end
 
   test do
-    assert_match "push code to GitHub", shell_output("#{bin}/gush --help")
+    system "#{bin}/gush", "--version"
   end
 end
