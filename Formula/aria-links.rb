@@ -1,8 +1,8 @@
 class AriaLinks < Formula
   desc "One named short link per placement, verified real clicks only"
   homepage "https://justaskaria.com"
-  url "https://github.com/techytonys/aria-links-cli/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "866ad9d1efbe4a968db0c944e9ce355578e76709a42bd51140a8185a76bdc18a"
+  url "https://github.com/techytonys/aria-links-cli/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "266cb53522cdf7e15cff7d7b3d4e55a27bc1daff80fc19f550c9365ece6f3f4f"
   license "MIT"
 
   depends_on "node"
