@@ -44,7 +44,7 @@ if command -v brew >/dev/null 2>&1; then
   else
     echo "aria-links isn't installed via Homebrew — nothing to remove there."
   fi
-  if brew tap | grep -qx "techytonys/tap" </dev/null; then
+  if brew tap </dev/null | grep -qx "techytonys/tap"; then
     brew untap techytonys/tap </dev/null || true
   fi
 else
