@@ -58,14 +58,18 @@ echo "with shared libnode.\" That note is about Node itself — it is NOT"
 echo "an error, and Aria Links doesn't use that feature. Aria Links is a"
 echo "plain script; if you see that line, the install is still on track."
 
-if brew list --formula aria-links >/dev/null 2>&1; then
+# NOTE: brew's stdin is /dev/null on purpose. When this script itself
+# arrives on stdin (curl | bash), a child that reads stdin would eat
+# the rest of the script — brew gets /dev/null so every line below
+# always runs.
+if brew list --formula aria-links >/dev/null 2>&1 </dev/null; then
   echo ""
   echo "aria-links is already installed — updating and reinstalling it"
   echo "clean, so a partial or outdated install gets repaired."
-  brew update
-  brew reinstall techytonys/tap/aria-links
+  brew update </dev/null
+  brew reinstall techytonys/tap/aria-links </dev/null
 else
-  brew install techytonys/tap/aria-links
+  brew install techytonys/tap/aria-links </dev/null
 fi
 
 # Self-check: success means the tool actually runs, not just that
